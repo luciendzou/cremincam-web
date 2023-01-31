@@ -1,0 +1,365 @@
+.about-tell-me {
+    padding: 1% 6%;
+}
+
+.about-tell-me span {
+    color: orange;
+}
+
+.about-tell-me h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.about-tell-me p {
+    color: black;
+    font-size: 22px;
+    padding: 2% 2%;
+    background-color: white;
+    border: none;
+}
+
+.quality {
+    padding: 1% 6%;
+}
+
+.quality h5 {
+    color: black;
+    font-weight: bold;
+}
+
+.quality h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.quality p, .card-text {
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.quality i {
+    color: rgb(1, 120, 255);
+    font-size: 16px;
+}
+
+.quality .services-about{
+    padding: 1% 2%;
+    text-align: center;
+}
+
+.quality .services-about h4{
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.quality .services-about i{
+    font-size: 1.1rem;
+    color: orange;
+}
+
+.organigram {
+    padding: 1% 5%;
+    display: block;
+}
+
+.organigram h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.organigram .orni-flex {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.orni-img {
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-end-start-radius: 10px;
+}
+
+.orni-text {
+    width: 50%;
+    padding: 3% 3%;
+    text-align: center;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-end-end-radius: 10px;
+}
+
+.orni-text i {
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.orni-text h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0% 8%;
+}
+
+.orni-text p {
+    color: black;
+    font-size: 14px;
+    margin: 0% 8%;
+}
+
+.team {
+    background-image: linear-gradient(to right, rgba(2, 175, 255, 0.445) 0%, rgba(255, 255, 255, 0.055) 30%, rgba(255, 207, 162, 0.445) 70%);
+    width: 100%;
+    height: 450px;
+    padding: 3% 5%;
+    display: block;
+}
+
+.team h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.teams-officer {
+    display: flex;
+}
+
+.team-card {
+    width: 25%;
+    margin: 0% 4%;
+}
+
+.team-img {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+}
+
+.team-card h1 {
+    font-size: 18px;
+    padding: 2% 5%;
+    font-weight: 900;
+    color: rgb(73, 73, 73);
+}
+
+
+.team-card h2 {
+    font-size: 20px;
+    padding: 3% 1%;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.msg-img {
+    width: 19%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-top-right-radius: 10px;
+    border-end-end-radius: 10px;
+}
+
+.msg-text {
+    width: 85%;
+    padding: 3% 3%;
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-end-start-radius: 10px;
+}
+
+.msg-text i {
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.msg-text h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0% 8%;
+}
+
+.msg-text p {
+    color: black;
+    font-size: 22px;
+    margin: 0% 8%;
+    text-align: justify;
+    line-height: 14% 0%;
+}
+
+.msg-flex {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.orgis {
+    width: 100%;
+    display: flex;
+}
+
+.orgis-img {
+    width: 80%;
+}
+
+.orgis-img img {
+    width: 70%;
+}
+
+.msg{
+    padding: 4% 5%;
+}
+
+.msg-flex .msg-text {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-creation{
+    padding: 1% 6%;
+}
+
+
+.section-creation h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.section-creation p{
+    width: 100%;
+    color: gray;
+    font-size: 14px;
+    padding: 2% 2%;
+    background-color: white;
+    border: none;
+    text-align: justify;
+    line-height: 0% 5%;
+}
+
+.stepper .line {
+    width: 2px;
+    background-color: lightgrey !important;
+}
+
+.stepper .lead {
+    font-size: 1.1rem;
+}
+
+.story-pub{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.story-pub .story-img-1{
+    width: 10%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-pub .story-img-2{
+    width: 10%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.story-pub .story-img-3{
+    width: 10%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-pub .story-text{
+    width: 70%;
+    padding: 3% 4%;
+    background-color: white;
+}
+
+.story-pub .story-text h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: orange;
+}
+
+.story-pub .story-text p{
+    font-size: 18px;
+    width: 80%;
+    font-weight: normal;
+    text-align: justify;
+    color: #000;
+}
+
+.carrieres{
+    width:100%;
+    padding:4% 5%;
+}
+
+.carrieres h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.carrieres h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.card-text-car{
+    text-align: justify;
+    font-size: 12px;
+    color: black;
+}
+
+.carrieres .card-img{
+    width: 100%;
+    height: 150px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-body img{
+    width: 40%;
+}
+
+.modal-body p{
+    font-size: 12px;
+}
+
+
+.modal-body .choix-modal{
+    width: 100%;
+    color: #000;
+}
+
+.modal-body .choix-modal:hover{
+    color: rgb(0, 140, 255);
+}

@@ -1,0 +1,45 @@
+.agences{
+    width: 100%;
+    padding: 2% 4%;
+}
+
+
+.agences h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.agences .nav-item{
+    background-color: white;
+    color: #000;
+    width: 20%;
+}
+
+.agences .nav-link h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.agences .nav-link i{
+    font-size: 15px;
+    color: #000;
+}
+
+.agences .nav-link p{
+    font-size: 8px;
+    color: rgb(56, 56, 56);
+}
+
+.agences .nav-link:hover{
+    color: orange;
+    background-color: rgb(255, 251, 247);
+}
+
+.agences .nav .active{
+    border-bottom: 4px solid orange;
+}
+
+.agences .tab-pane{
+    padding: 5% 4%;
+    background-color: white;
+}

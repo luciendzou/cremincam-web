@@ -1,0 +1,43 @@
+.brand-account{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 4% 5%;
+}
+
+.brand-account h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.account-block {
+    width: 100%;
+    height: 340;
+    display: block;
+    background-color: white;
+}
+
+.img-account{
+    width: 100%;
+    height: 120px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-account{
+    width: 100%;
+    height: 110px;
+    padding: 3% 4%;
+}
+
+.text-account p{
+    font-size: 16px;
+    color: #000;
+}
+
+.text-account b{
+    font-size: 18px;
+    color: rgb(0, 97, 189);
+}

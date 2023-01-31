@@ -1,0 +1,32 @@
+.brand-five{
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(3, 45, 85, 0.74) 50%,rgba(156, 198, 238, 0.267) 100%), url(/img/header/img-11.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+}
+
+.card-five{
+    width: 50%;
+    padding: 3% 3%;
+    background-color: white;
+}
+
+.card-five h1{
+    font-size: 32px;
+    color: orange;
+    margin-bottom: 2%;
+}
+
+.card-five p{
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+    line-height: normal;
+}
+
+.brand-five a{
+    color: rgb(0, 140, 255);
+    font-weight: 800;
+}

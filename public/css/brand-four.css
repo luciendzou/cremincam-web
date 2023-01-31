@@ -1,0 +1,70 @@
+.brand-four{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 460px;
+    padding: 2% 5%;
+}
+
+.brand-four h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.brand-four-flex{
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.brand-four-flex .carte{
+    margin: 0% 1.11%;
+    width: 32%;
+    height: 350px;
+    display: block;
+}
+
+.carte-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55%;
+}
+
+.carte-title{
+    background-color: white;
+    width: 100%;
+    height: 31%;
+    padding: 2% 5%;
+}
+
+.carte-title span{
+    font-size: 12px;
+    color: orange;
+}
+
+.carte-title h3{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.carte-options{
+    background-color: white;
+    width: 100%;
+    height: 14%;
+    display: block;
+    padding: 2% 5%;
+}
+
+.carte-options a{
+    font-size: 14px;
+    color: rgb(5, 138, 199);
+    text-decoration: underline;
+}
+
+.date-four{
+    font-size: 14px;
+    color: gray;
+}

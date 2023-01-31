@@ -1,0 +1,65 @@
+.brand-two{
+    position: relative;
+    padding: 1% 5%;
+    top: -40px;
+}
+
+.brand-two h1 {
+    font-size: 32px;
+    color: black;
+}
+
+.brand-two span {
+    color: orange;
+}
+
+.brand-two .contain {
+    padding: 1% 20%;
+}
+
+.card-two {
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    height: 400px;
+    margin: auto;
+}
+
+.card-two .bg-two{
+    width: 50%;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-end-end-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-two{
+    padding: 3% 5%;
+    width: 50%;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.text-two h1{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.text-two b{
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: normal;
+}
+
+.text-two i{
+    color: orange;
+    font-size: 16px;
+}
+
+.text-two .details{
+    font-size: 14px;
+}

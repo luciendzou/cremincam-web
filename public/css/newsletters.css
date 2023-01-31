@@ -1,0 +1,38 @@
+.newsletters{
+    display: block;
+    width: 100%;
+    padding: 2% 5%;
+    text-align: center;
+    background-color: white;
+    background-clip: border-box;
+}
+
+.newsletters h1{
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.newsletters h5{
+    font-size: 14px;
+    color: black;
+}
+
+.news-form{
+    display: block;
+}
+
+.news-form input{
+    width: 50%;
+    border: none;
+    padding: 0.5% 2%;
+    border-radius: 10px;
+}
+
+.newsletters .alert{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 30;
+}

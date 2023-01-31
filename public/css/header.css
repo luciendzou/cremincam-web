@@ -1,0 +1,344 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: rgba(185, 185, 185, 0.11);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+header {
+    width: 100vw;
+    position: absolute;
+    z-index: 10;
+}
+
+.navbrand {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    background-color: rgba(0, 7, 15, 0.336);
+    /*filter: blur(4px);*/
+	animation: fadeIn 1s ease-in both;
+}
+
+
+.navbrand .logobrand {
+    width: 19%;
+    padding: 2% 2%;
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.navbrand .menusbrand {
+    width: 81%;
+    display: block;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.first-menus {
+    width: 100%;
+    padding: 1% 2%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: stretch;
+
+}
+
+.first-menus .menu-fs-one {
+    width: 20%;
+}
+
+.menu-fs-one h6 {
+    color: white;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-fs-one a {
+    color: white;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.first-menus .menu-fs-two {
+    width: 80%;
+    justify-content: end;
+    align-items: stretch;
+    align-content: space-between;
+    text-align: end;
+}
+
+.second-menus {
+    width: 100%;
+    padding: 2% 2%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+}
+
+.second-menus .menu-sd-one {
+    width: 98%;
+}
+
+.second-menus .menu-sd-two {
+    width: 2%;
+    text-align: end;
+}
+
+.menu-sd-two i{
+    color: white;
+}
+
+.modal-title {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.choix-modal-1 {
+    border: 0.05px solid black;
+}
+
+.choix-modal-2 {
+    border-top: 0.05px solid black;
+    border-bottom: 0.05px solid black;
+}
+
+.choix-modal-3 {
+    border: 0.05px solid black;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    /*pour IE*/
+}
+
+ul li a {
+    display: block;
+    float: left;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    background-color: #d3d3d31a;
+}
+
+
+.navbrand ul li a:hover{
+    background-color: transparent;
+    color: orange;
+    font-size: 14.1px;
+    animation: fadeInAnimation ease 1s;
+}
+
+.active-fixed{
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+.input-groups{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px 5px;
+}
+
+.input-groups input{
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    padding: 1% 2%;
+}
+
+.input-groups input::after{
+    border: none;
+}
+
+
+.input-groups input::before{
+    border: none;
+}
+
+.input-groups button{
+    position: absolute;
+    right: 66px;
+    top: 94px;
+    width: 15%;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(16, 123, 245);
+    color: white;
+}
+
+.input-groups button:hover{
+    background-color: rgb(16, 123, 245);
+    color: white;
+}
+
+#show{
+    position: absolute;
+    top: 98px;
+}
+
+.bg-header{
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: 525px;
+    background-image: linear-gradient(to right, rgba(1, 49, 121, 0.699) 10%,rgba(156, 198, 238, 0.055) 100%),  url(/img/header/img-5.png);
+    background-size: cover;
+    padding: 12% 5%;
+    display: block;
+}
+
+.bg-header .title-header{
+    width: 55%;
+}
+
+.title-header h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.title-header h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.title-header h4{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.title-header h6{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.btn-header{
+    background-color: white;
+    padding: 1.1% 2%;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder;
+    color: #0175d4;
+}
+
+.others-actions{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    bottom: 40px;
+    padding: 0% 7%;
+    margin: 0;
+}
+
+.actions .col-3{
+    background-color: white;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 5px 6px -6px #222;
+    padding: 2% 2%;
+}
+
+.actions i{
+    font-size: 28px;
+    color: #0175d4;
+}
+
+.actions a{
+    font-size: 18px;
+    color: #0175d4;
+}
+
+.bg-header-home{
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: 525px;
+    display: block;
+}
+
+.bg-header-item{
+    width: 100%;
+    height: 525px;
+    background-size: cover;
+    background-position: right;
+    padding: 12% 5%;
+}
+
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.8);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 27, 37, 0.4);
+}
+
+.head-img{
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: 220px;
+    background-image: linear-gradient(to right, rgba(1, 49, 121, 0.699) 10%,rgba(1, 27, 51, 0.527) 100%),  url(/img/header/img-9.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 12% 5%;
+    display: block;
+}

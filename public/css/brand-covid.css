@@ -1,0 +1,32 @@
+.brand-covid{
+    width: 100%;
+    display: flex;
+}
+
+.brand-covid .bg-img-covid{
+    width: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brand-covid .text-covid{
+    width: 60%;
+    padding: 2% 3%;
+}
+
+.brand-covid .button-covid{
+    width: 20%;
+    padding: 3% 2%;
+}
+
+.text-covid h1{
+    font-size: 28px;
+    color: orange;
+    font-weight: bold;
+}
+
+.text-covid p{
+    font-size: 15px;
+    color: black;
+}

@@ -1,0 +1,41 @@
+.bg-footer{
+    background-color: white;
+}
+
+.bg-footer span{
+    color: black;
+}
+
+.bg-footer i{
+    font-size: 30px;
+}
+
+.fa-facebook-f:hover{
+    color: rgb(38, 139, 255);
+}
+.fa-twitter:hover{
+    color: rgb(97, 205, 255);
+}
+.fa-instagram:hover{
+    color: rgb(255, 0, 149);
+}
+.fa-linkedin:hover{
+    color: rgb(0, 62, 143);
+}
+
+.linker a{
+    font-size: 12px;
+}
+
+.icons-part{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 0% 5%;
+    text-align: center;
+}
+
+.icons-bg{
+    width: 20%;
+    margin: 0% 5%;
+}

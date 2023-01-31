@@ -1,0 +1,7 @@
+.fade-in {
+    animation: 3s linear 1s slidein;
+    -webkit-animation: 3s linear 1s slidein;
+    -moz-animation: 3s linear 1s slidein;
+    -o-animation: 3s linear 1s slidein;
+    -ms-animation: 3s linear 1s slidein;
+}

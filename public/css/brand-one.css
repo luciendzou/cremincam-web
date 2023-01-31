@@ -1,0 +1,65 @@
+.brand-one {
+    position: relative;
+    padding: 1% 5%;
+    top: -20px;
+}
+
+.brand-one h1 {
+    font-size: 32px;
+    color: black;
+}
+
+.brand-one span {
+    color: orange;
+}
+
+.brand-one .contain {
+    padding: 1% 20%;
+}
+
+.card-one {
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    height: 400px;
+    margin: auto;
+}
+
+.card-one .bg-one{
+    width: 50%;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-end-start-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-one{
+    padding: 3% 5%;
+    width: 50%;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-end-end-radius: 20px;
+}
+
+.text-one h1{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.text-one b{
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: normal;
+}
+
+.text-one i{
+    color: orange;
+    font-size: 16px;
+}
+
+.text-one .details{
+    font-size: 14px;
+}
