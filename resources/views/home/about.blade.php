@@ -13,24 +13,14 @@
             avec un capital initial de 90 millions de francs.</p>
     </section>
     <section class="quality mt-3">
-        <h1>Notre objectif, notre vision et notre mission</h1>
+        <h1>Notre vision, notre mission, notre objectif et nos valeurs </h1>
         <div class="row mt-4">
-            <div class="col">
-                <div class="card text-start">
-                    <div class="card-body">
-                        <h5 class="card-title">Objectif</h5>
-                        <p class="card-text" style="text-align: justify">La collecte de l'épargne de ses membres et l'octroi
-                            des financements au profit exclusif des dits membres.</p>
-                    </div>
-                    <div class="card-footer text-muted"><i class="fas fa-certificate"></i></div>
-                </div>
-            </div>
             <div class="col">
                 <div class="card text-start">
                     <div class="card-body">
                         <h5 class="card-title">Vision</h5>
                         <p class="card-text" style="text-align: justify">
-                            Être une microfinance de référence dans 25 ans, et
+                            CREMINCAM voudrait être une microfinance de référence dans 25 ans, qui soit
                             leader en matière
                             de responsabilité sociale par la mutualisation et la rentabilisation de ses potentiels,
                             pour l'épanouissement de ses membres.
@@ -44,10 +34,22 @@
                     <div class="card-body">
                         <h5 class="card-title">Mission</h5>
                         <p class="card-text" style="text-align: justify">
-                            Collecte de l'épargne et l'octroi des crédits à ses membres
-                            en assurant leur sécurité et leur rentabilité dans le souci d'un développement durable
-                            en vue de leur satisfaction.
+                            La mission de CREMIN-CAM est de collecter l’épargne et d’octroyer des crédits à ses membres en
+                            assurant leur sécurité et leur rentabilité dans le souci d’un développement durable en vue de la
+                            satisfaction des aspirations légitimes desdits membres.
                         </p>
+                    </div>
+                    <div class="card-footer text-muted"><i class="fas fa-certificate"></i></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-start">
+                    <div class="card-body">
+                        <h5 class="card-title">Objectif et Valeurs</h5>
+                        <p class="card-text" style="text-align: justify">Collecte de l'épargne de ses membres et l'octroi
+                            des financements au profit exclusif des dits membres. <br>
+                            <b>Démocratie, Solidarité, Egalité, Intégrité, Transparence, Innovation et créativité,
+                                Le client est roi, La performance.</b></p>
                     </div>
                     <div class="card-footer text-muted"><i class="fas fa-certificate"></i></div>
                 </div>
@@ -125,9 +127,9 @@
                     Puissions-nous, ensemble, concrétiser de nombreux et beaux projets pour notre coopérative.
 
                     <!--Dear members,
-                                The entire CREMIN-CAM team joins me in wishing you a happy new year 2023, rich in satisfaction in all respects.
-                                Thanking you for your trust,
-                                May we, together, realize many beautiful projects for our cooperative.-->
+                                    The entire CREMIN-CAM team joins me in wishing you a happy new year 2023, rich in satisfaction in all respects.
+                                    Thanking you for your trust,
+                                    May we, together, realize many beautiful projects for our cooperative.-->
                 </p>
             </div>
             <div class="msg-img" style="background-image: url(/img/header/Directeur-mot.png)"></div>
@@ -238,10 +240,22 @@
                 </div>
                 <div class="modal-body">
                     <div class="orgis">
-                        <div class="orgis-img">
-                            <img src="img/header/Organisme.png" alt="" srcset="">
+                        <div class="orgis-img" style="background-image: url('{{ asset('img/header/Organisme.png') }}')">
                         </div>
-                        <div class="orgis-text"></div>
+                        <div class="orgis-text">
+                            <ul>
+                                <li><b>DAFC : </b></li><br>
+                                <li><b>CJ : </b> Cellule Juridique</li><br>
+                                <li><b>DESA : </b></li><br>
+                                <li><b>CI : </b> Cellule Informatique</li><br>
+                                <li><b>RH : </b> Ressources Humaines</li><br>
+                                <li><b>RME : </b> Ressources Matérielles et des Equipements</li><br>
+                                <li><b>SRDM : </b> Service de Recherche du Développement Marketing</li><br>
+                                <li><b>SE : </b></li><br>
+                                <li><b>SRC : </b></li><br>
+                                <li><b>CPR : </b></li><br>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

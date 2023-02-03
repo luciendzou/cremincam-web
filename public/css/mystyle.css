@@ -212,15 +212,27 @@
 
 .orgis {
     width: 100%;
+    height: 650px;
     display: flex;
 }
 
 .orgis-img {
-    width: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
 .orgis-img img {
+    width: 100%;
+}
+
+.orgis-text{
     width: 70%;
+    padding: 2%;
+    text-align: justify;
+    font-size: 25px;
+    color: #000;
 }
 
 .msg{
@@ -363,3 +375,187 @@
 .modal-body .choix-modal:hover{
     color: rgb(0, 140, 255);
 }
+
+
+
+
+
+
+
+/******************** Admin design  *****************************/
+.input-file-1{
+    width:100%;
+    height: 100px;
+    border: 1px solid rgba(153, 153, 153, 0.274);
+    border-radius: 20px;
+    text-align: center;
+    padding: 0;
+	cursor: pointer;
+    background-color: azure;
+}
+
+.input-file-1:focus{
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.input-file-1 #image-pub-1{
+    width: 100%;
+    height: 100px;
+    opacity: 0;
+    z-index: 10;
+}
+
+.input-file-1 .display-img-1{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border: none;
+}
+
+.input-file-1 .option-1{
+    position: relative;
+    z-index: 1;
+    top: 20px;
+    border: none;
+}
+
+.input-file-1 .label-1{
+    width: 100%;
+    font-size: 12px;
+	cursor: pointer;
+}
+
+.input-file-1 i{
+    font-size: 20px;
+	cursor: pointer;
+}
+
+
+.input-file-2{
+    width:100%;
+    height: 100px;
+    border: 1px solid rgba(153, 153, 153, 0.274);
+    border-radius: 20px;
+    text-align: center;
+    padding: 0;
+	cursor: pointer;
+    background-color: azure;
+}
+
+.input-file-2:focus{
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.input-file-2 #image-pub-2{
+    width: 100%;
+    height: 100px;
+    opacity: 0;
+    z-index: 10;
+    border: none;
+}
+
+.input-file-2 .display-img-2{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border: none;
+}
+
+.input-file-2 .option-2{
+    position: relative;
+    z-index: 1;
+    top: 20px;
+    border: none;
+}
+
+.input-file-2 label{
+    width: 100%;
+    font-size: 12px;
+	cursor: pointer;
+    border: none;
+}
+
+.input-file-2 i{
+    font-size: 20px;
+	cursor: pointer;
+    border: none;
+}
+
+
+.input-file-3{
+    width:100%;
+    height: 100px;
+    border: 1px solid rgba(153, 153, 153, 0.274);
+    border-radius: 20px;
+    text-align: center;
+    padding: 0;
+	cursor: pointer;
+    background-color: azure;
+}
+
+.input-file-3:focus{
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.input-file-3 #image-pub-3{
+    width: 100%;
+    height: 100px;
+    opacity: 0;
+    z-index: 10;
+    border: none;
+}
+
+.input-file-3 .display-img-3{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border: none;
+}
+
+.input-file-3 .option-3{
+    position: relative;
+    z-index: 1;
+    top: 20px;
+    border: none;
+}
+
+.input-file-3 label{
+    width: 100%;
+    font-size: 12px;
+	cursor: pointer;
+    border: none;
+}
+
+.input-file-3 i{
+    font-size: 20px;
+	cursor: pointer;
+    border: none;
+}
+
+
+.form-outline{
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+.form-outline:focus{
+    border: 1px solid rgb(2, 162, 255);
+    border-radius: 5px;
+}
+
+.form-label{
+    background-color: white;
+    padding: 2px 4px;
+}
+
+.message{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-bottom: 1%;
+    height: 100%;
+}
+

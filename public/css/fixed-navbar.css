@@ -8,28 +8,31 @@
     box-shadow: 0 4px 6px -6px #222;
     background-color: white;
     /*filter: blur(4px);*/
-	animation: fadeIn 1s ease-in both;
+    animation: fadeIn 1s ease-in both;
 }
 
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
-     }
+    }
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
+
 .fixed-top .logobrand {
     width: 8%;
     padding: 1% 2%;
@@ -37,7 +40,7 @@
     text-align: center;
 }
 
-.fixed-top .logobrand img{
+.fixed-top .logobrand img {
     width: 80%;
 }
 
@@ -69,14 +72,19 @@
     font-weight: bold;
 }
 
-.fixed-top ul li a:hover{
+.fixed-top ul li a:hover {
     background-color: transparent;
     color: orange;
     font-size: 14.1px;
     animation: fadeInAnimation ease 0.5s;
 }
 
-.active-fixed{
-    color: orange;
-    border-bottom: 2px solid orange;
+.active-fixed-1 {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to top, rgba(255, 154, 2, 0.123) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.active-fixed-2 {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top, rgba(2, 175, 255, 0.123) 0%, rgba(255, 255, 255, 0) 100%);
 }

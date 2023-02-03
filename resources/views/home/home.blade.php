@@ -59,7 +59,37 @@
     <section class="brand-one">
         <div class="container-fluid">
             <h1 class="animate__animated animate__fadeInUp animate__slower animate__delay-1s">Bienvenue au <span>Crédit Mutuel d'Investissement du Cameroun</span>,</h1>
-            <div class="contain px-5 text-center mt-4">
+            <div class="row my-5 animate__animated animate__fadeInUp animate__slower animate__delay-2s">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body" style="font-size:22px; color:rgb(0, 132, 255);">
+                            <i class="fas fa-hands-helping me-4"></i> Solidarité
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body" style="font-size:22px; color:rgb(0, 132, 255);">
+                            <i class="fas fa-handshake me-4"></i> Egalité
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body" style="font-size:22px; color:rgb(0, 132, 255);">
+                            <i class="fas fa-gavel me-4"></i> Intégrité
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body" style="font-size:22px; color:rgb(0, 132, 255);">
+                            <i class="fas fa-award me-4"></i> Performance
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contain text-center mt-4">
                 <div class="card-one shadow-lg shadow-blue-500/50">
                     <div class="bg-one" style="background-image: url(img/header/img-12.jpg);"
                         title="Image de asier_relampagoestudio sur Freepik"></div>
@@ -104,24 +134,28 @@
     <section class="brand-four mt-3">
         <h1>Actualités</h1>
         <div class="brand-four-flex mb-3">
-            @for ($i = 0; $i < 3; $i++)
-
-            <div class="carte shadow-lg shadow-blue-500/50">
-                <div class="carte-img" style="background-image: url(img/header/img-5.png);"></div>
-                <div class="carte-title">
-                    <span>Annonce</span>
-                    <h3>Message du Directeur Général aux différents membres</h3>
-                </div>
-                <div class="carte-options">
-                    <div class="row">
-                        <div class="col me-auto date-four"><i class="fas fa-calendar me-2"></i>01 janvier 2023</div>
-                        <div class="col text-end">
-                            <a href="">Lire<i class="fas fa-angle-right ms-2"></i></a>
+            <div class="row">
+                @foreach ($publications as $item)
+                <div class="col-3">
+                    <div class="carte shadow-lg shadow-blue-500/50">
+                        <div class="carte-img" style="background-image: url('{{$item->image_path_2}}');"></div>
+                        <div class="carte-title">
+                            <span>{{ $item->type }}</span>
+                            <h3>{{ substr($item->titre, 0, 25).'...' }}</h3>
+                            <p>{{ substr($item->texte1, 0, 80).'...'}}</p>
+                        </div>
+                        <div class="carte-options">
+                            <div class="row">
+                                <div class="col-8 me-auto date-four"><i class="fas fa-calendar me-2"></i>{{ DateFormat_Fr($item->date) }}</div>
+                                <div class="col text-end">
+                                    <a href="/{{ Str::lower(str_replace(' ', '-', $item->titre)) }}/{{ $item->id }}">Lire<i class="fas fa-angle-right ms-2"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            @endforeach
             </div>
-            @endfor
         </div>
     </section>
 
@@ -152,7 +186,7 @@
                 </a>
             </div>
             <div class="col">
-                <a href="/professionnel">
+                <a href="/particulier">
                     <div class="account-block shadow-3">
                         <div class="img-account" style="background-image: url(img/header/img-15.png)"></div>
                         <div class="text-account">

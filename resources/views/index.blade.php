@@ -24,11 +24,11 @@
     <meta property="og:title" content="La meilleure MICROFINANCE qui soit au Cameroun">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.cremincam.org/">
-    <meta property="og:image" content="https://www.cremincam.org/images/cremincam.png">
+    <meta property="og:image" content="https://www.cremincam.org/img/logo/cremincam.png">
     <meta property="og:description"
         content="Vous recherchez une microfinance pour vous aider dans vos affaires ? ne cherchez plus. CREMINCAM a tout prévu pour vous accompagner à réaliser vos projets.">
     <meta property="og:site_name" content="CREMINCAM | Microfinance Banque Cameroun Crédit mutuelle">
-    <title>CREMIN-CAM | Microfinance Cameroun - Banque Cameroun - Crédit mutuelle d'Investissement du Cameroun</title>
+    <title>CREMIN-CAM | Microfinance Cameroun - Crédit mutuelle d'Investissement du Cameroun</title>
 
     <!-- icon -->
     <link rel="icon" href="https://www.cremincam.org/img/icon/favicon-256x256.png">
@@ -54,6 +54,7 @@
     <link rel="stylesheet" href="{{ asset('css/brand-covid.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}">
     <link rel="stylesheet" href="{{ asset('css/newsletters.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/news.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/fixed-navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/brand-account.css') }}">
@@ -68,7 +69,7 @@
     <header>
         <div class="navbrand" id="navbrand">
             <div class="logobrand">
-                <a href="/"><img src="img/logo/cremincam.png" alt="" srcset=""></a>
+                <a href="/"><img src="{{ asset('img/logo/cremincam.png') }}" alt="" srcset=""></a>
             </div>
             <div class="menusbrand">
                 <div class="first-menus">
@@ -95,7 +96,7 @@
                         <ul id="sd-menus">
                             @foreach ($menus as $item)
                                 <li class="me-4">
-                                    <a href="/{{ Str::lower(str_replace(' ', '-', $item)) }}">{{ $item }}</a>
+                                    <a  href="/{{ Str::lower(str_replace(' ', '-', $item)) }}">{{ $item }}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -106,14 +107,14 @@
 
         <div class="fixed-top" id="fixed-top">
             <div class="logobrand">
-                <a href="/"><img src="img/icon/cremi.png" alt="" srcset=""></a>
+                <a href="/"><img src="{{asset('img/icon/cremi.png')}}" alt="" srcset=""></a>
             </div>
             <div class="menusbrand">
                 <div class="menu-sd-one">
                     <ul id="sd-menus">
                         @foreach ($menus as $item)
-                            <li class="me-4"><a
-                                    href="/{{ Str::lower(str_replace(' ', '-', $item)) }}">{{ $item }}</a>
+                            <li class="me-4">
+                                <a href="/{{ Str::lower(str_replace(' ', '-', $item)) }}">{{ $item }}</a>
                             </li>
                         @endforeach
                     </ul>
@@ -248,7 +249,7 @@
                                 <a class="choix-modal" href="/particulier">
                                     <img src="{{ asset('img/header/particulier.png') }}" alt="">
                                     <h2>PARTICULIERS</h2>
-                                    <p>Pour les personnels  <br> d'administration, privé,
+                                    <p>Pour les personnels <br> d'administration, privé,
                                         étudiants, etc...</p>
                                 </a>
                             </div>
@@ -256,7 +257,7 @@
                                 <a class="choix-modal" href="/entreprise">
                                     <img src="{{ asset('img/header/entreprise.png') }}" alt="">
                                     <h2>ENTREPRISES</h2>
-                                    <p>Pour les entreprises,  <br> associations, groupes, etc...</p>
+                                    <p>Pour les entreprises, <br> associations, groupes, etc...</p>
                                 </a>
                             </div>
                         </div>
@@ -342,7 +343,8 @@
 
         <!-- Copyright -->
         <div class="text-center px-2 py-4" style="background-color: rgba(255, 255, 255); color:rgb(116, 116, 116)">
-            Copyright © <span id="year" style="color: rgb(116, 116, 116)"></span> Crédit Mutuel d'Investissement du
+            Copyright © <span id="year" style="color: rgb(116, 116, 116)"></span> Crédit Mutuel d'Investissement
+            du
             Cameroun (CREMIN-CAM).
         </div>
         <!-- Copyright -->
@@ -371,7 +373,6 @@
     </script>
     <script type="text/javascript" src="{{ asset('js/header.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/fixed-nav.js') }}"></script>
-
 
 </body>
 

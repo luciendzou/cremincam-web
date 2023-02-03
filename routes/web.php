@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OnlineBankController;
 use App\Http\Controllers\ParticuliersController;
@@ -24,6 +25,7 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/carrières', 'carriere');
     Route::get('/actualités', 'actu');
     Route::get('/nous-contacter', 'contacts');
+    Route::get('/{name}/{id}','actuDetails');
 });
 
 Route::controller(ParticuliersController::class)->group(function(){
@@ -34,4 +36,12 @@ Route::controller(ParticuliersController::class)->group(function(){
 Route::controller(OnlineBankController::class)->group(function(){
     Route::get('/register', 'register');
     Route::post('/newsletters', 'newsletters');
+});
+
+
+
+Route::controller(AdminController::class)->group(function(){
+    Route::get('/admin', 'adminHome');
+    Route::get('/addpub', 'addPub');
+    Route::post('/addingpub', 'adding');
 });

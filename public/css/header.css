@@ -4,7 +4,7 @@ body{
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    background-color: rgba(185, 185, 185, 0.11);
+    background-color: rgba(155, 155, 155, 0.11);
 }
 
 @keyframes fadeInAnimation {
@@ -50,7 +50,7 @@ header {
 .navbrand .logobrand {
     width: 19%;
     padding: 2% 2%;
-    border-right: 1px solid rgb(255, 255, 255);
+    border-right: 0.005px solid rgba(255, 255, 255, 0.199);
 }
 
 .navbrand .menusbrand {
@@ -63,7 +63,7 @@ header {
 .first-menus {
     width: 100%;
     padding: 1% 2%;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 0.005px solid rgba(255, 255, 255, 0.199);
     display: flex;
     align-items: stretch;
 

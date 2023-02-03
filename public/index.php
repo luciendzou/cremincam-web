@@ -53,3 +53,57 @@ $response = $kernel->handle(
 )->send();
 
 $kernel->terminate($request, $response);
+
+function DateFormat_Fr($date)
+{
+    $monthFr = '';
+    $dt = new DateTime();
+    //$date = $dt->format('Y-m-d');
+
+    $month = substr($s1 = substr($date, strpos($date, '-') + 1), 0, - (strlen($s1) - strpos($s1, "-")));
+    $day = substr($s1, strpos($s1, '-') + 1);
+    $year = substr($date, 0, strpos($date, '-'));
+
+    switch ($month) {
+        case '01':
+            $monthFr = $day . " Janvier " . $year;
+            break;
+        case '02':
+            $monthFr = $day . " Février " . $year;
+            break;
+        case '03':
+            $monthFr = $day . " Mars " . $year;
+            break;
+        case '04':
+            $monthFr = $day . " Avril " . $year;
+            break;
+        case '05':
+            $monthFr = $day . " Mai " . $year;
+            break;
+        case '06':
+            $monthFr = $day . " Juin " . $year;
+            break;
+        case '07':
+            $monthFr = $day . " Juillet " . $year;
+            break;
+        case '08':
+            $monthFr = $day . " Août " . $year;
+            break;
+        case '09':
+            $monthFr = $day . " Septembre " . $year;
+            break;
+        case '10':
+            $monthFr = $day . " Octobre " . $year;
+            break;
+        case 'novembre':
+        case '11':
+            $monthFr = $day . " Novembre " . $year;
+            break;
+        case '12':
+            $monthFr = $day . " Décembre " . $year;
+            break;
+
+    }
+
+    return $monthFr;
+}

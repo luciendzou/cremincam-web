@@ -1,0 +1,33 @@
+.news-details{
+    width: 100%;
+    padding: 1% 8%;
+}
+
+.img-news-datails{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news-details h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.news-details .texte{
+    font-size: 20px;
+    color: #000;
+    text-align: justify;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bande{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-color: orange;
+}

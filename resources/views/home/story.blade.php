@@ -117,7 +117,7 @@
             <p class="mt-3">Si notre histoire vous intérèsse, et vous voulez commencer une grande et très longue aventure
                 avec une équipe de professionnels, près à vous fournir un service de qualité,
                 alors...</p>
-            <a href="" class="btn btn-primary mt-3">Comment vous retrouver</a>
+            <a href="/agences" class="btn btn-primary mt-3">Comment vous retrouver</a>
         </div>
         <div class="story-img-1" style="background-image: url(img/header/dg.jpg)"></div>
         <div class="story-img-2" style="background-image: url(img/header/dga.jpg)"></div>

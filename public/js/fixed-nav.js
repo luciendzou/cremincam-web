@@ -30,7 +30,7 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(
-    document.querySelector('.card-one ')
+    document.querySelector('.card-one')
 );
 
 

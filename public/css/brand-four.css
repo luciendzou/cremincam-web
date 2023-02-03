@@ -2,7 +2,6 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 460px;
     padding: 2% 5%;
 }
 
@@ -13,29 +12,38 @@
 }
 
 .brand-four-flex{
-    display: flex;
     width: 100%;
     margin-top: 2%;
 }
 
 .brand-four-flex .carte{
     margin: 0% 1.11%;
-    width: 32%;
-    height: 350px;
+    width: 100%;
+    height: 300px;
     display: block;
 }
 
 .carte-img{
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 55%;
+	-webkit-transition: 3s ease-in-out;
+	transition: 3s ease-in-out;
+}
+
+.carte-img:hover{
+    background-size: 120%;
+    cursor:pointer;
+	-webkit-transition: 3s ease-in-out;
+	transition: 3s ease-in-out;
 }
 
 .carte-title{
     background-color: white;
     width: 100%;
-    height: 31%;
+    height: 35%;
     padding: 2% 5%;
 }
 
@@ -48,6 +56,12 @@
     font-size: 16px;
     color: black;
     font-weight: bold;
+}
+
+.carte-title p{
+    font-size: 12px;
+    color: rgb(145, 145, 145);
+    line-height: 130%;
 }
 
 .carte-options{
