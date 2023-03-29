@@ -11,9 +11,12 @@
     color: black;
 }
 
+.account{
+    margin-top: 5%;
+}
+
 .account-block {
     width: 100%;
-    height: 340;
     display: block;
     background-color: white;
 }

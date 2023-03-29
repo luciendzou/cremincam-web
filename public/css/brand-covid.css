@@ -1,6 +1,7 @@
 .brand-covid{
     width: 100%;
     display: flex;
+    margin-top: 4%;
 }
 
 .brand-covid .bg-img-covid{
@@ -18,6 +19,10 @@
 .brand-covid .button-covid{
     width: 20%;
     padding: 3% 2%;
+}
+
+.button-covid .btn{
+    margin-top: 7%;
 }
 
 .text-covid h1{

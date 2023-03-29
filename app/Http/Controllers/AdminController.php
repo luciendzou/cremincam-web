@@ -29,12 +29,12 @@ class AdminController extends Controller
             'type' => 'required',
             'titre' => 'required',
             'texte1' => 'required',
-            'texte2' => 'required',
-            'texte3' => 'required',
+            'texte2' => '',
+            'texte3' => '',
             'date' => 'required',
             'file1' => 'required|mimes:jpg,png|max:4048',
-            'file2' => 'required|mimes:jpg,png|max:4048',
-            'file3' => 'required|mimes:jpg,png|max:4048',
+            'file2' => 'mimes:jpg,png|max:4048',
+            'file3' => 'mimes:jpg,png|max:4048',
         ]);
 
         $publication = new Publication();
@@ -42,11 +42,22 @@ class AdminController extends Controller
         if ($request->file()) { */
         try {
             $fileName1 = time() . '_' . $request->file1->getClientOriginalName();
-            $fileName2 = time() . '_' . $request->file2->getClientOriginalName();
-            $fileName3 = time() . '_' . $request->file3->getClientOriginalName();
-            $filePath1 = $request->file('file1')->storeAs('publications', $fileName1, 'public');
-            $filePath2 = $request->file('file2')->storeAs('publications', $fileName2, 'public');
-            $filePath3 = $request->file('file3')->storeAs('publications', $fileName3, 'public');
+            if ($request->file2 !='') {
+                $fileName2 = time() . '_' . $request->file2->getClientOriginalName();
+            }
+            if ($request->file3 !='') {
+                $fileName3 = time() . '_' . $request->file3->getClientOriginalName();
+            }
+
+            $destinationPath = 'img/publications';
+
+            $filePath1 = $request->file1->move(public_path($destinationPath), $fileName1);
+            if ($fileName2 != '') {
+                $filePath2 = $request->file2->move(public_path($destinationPath), $fileName2);
+            }
+            if ($fileName3 != '') {
+                $filePath3 = $request->file3->move(public_path($destinationPath), $fileName3);
+            }
 
             $publication->idadmin = '1';
             $publication->type = $request->type;
@@ -56,9 +67,9 @@ class AdminController extends Controller
             $publication->texte3 = $request->texte3;
             $publication->date = $request->date;
             $publication->image = Str::lower(str_replace(' ', '-', $request->titre));
-            $publication->image_path_1 = '/storage/' . $filePath1;
-            $publication->image_path_2 = '/storage/' . $filePath2;
-            $publication->image_path_3 = '/storage/' . $filePath3;
+            $publication->image_path_1 = 'img/publications/'.$fileName1;
+            $publication->image_path_2 = 'img/publications/'.$fileName2;
+            $publication->image_path_3 = 'img/publications/'.$fileName3;
             $publication->save();
 
             return back()

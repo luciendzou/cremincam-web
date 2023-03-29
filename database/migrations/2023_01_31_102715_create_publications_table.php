@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string('type');
             $table->string('titre');
             $table->longText('texte1');
-            $table->longText('texte2');
-            $table->longText('texte3');
+            $table->longText('texte2')->nullable();
+            $table->longText('texte3')->nullable();
             $table->string('date');
             $table->integer('nbre_view');
             $table->timestamps();

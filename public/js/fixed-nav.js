@@ -1,15 +1,48 @@
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function () { scrollFunction(); };
-
-$("#fixed-top").hide();
+var navbar = document.getElementById('navbrand');
+var buttonNav = document.getElementById('navbar-toggler');
+var btnW = document.getElementById('btn-w');
+var btnR = document.getElementById('btn-red');
+var modal = document.getElementById('modal');
+var modale = document.getElementById('modale');
+$('#logo-small').hide();
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        $("#fixed-top").show();
-        $("#navbrand").hide();
+        navbar.classList.add('fixed-top');
+        navbar.classList.remove('bg-navbar');
+        navbar.classList.add('animate__fadeInDown');
+        navbar.classList.remove('animate__fadeIn');
+        buttonNav.classList.remove('text-white');
+        buttonNav.classList.add('text-dark');
+        btnW.classList.add('btn-primary');
+        btnW.classList.remove('btn-white','bg-[#fff]');
+        btnR.classList.add('btn-primary');
+        btnR.classList.remove('btn-white','bg-[#fff]');
+        modal.classList.remove('btn-white','bg-[#fff]','text-warning');
+        modal.classList.add('btn-danger');
+        modale.classList.remove('btn-white','bg-[#fff]','text-warning');
+        modale.classList.add('btn-danger');
+        $('#logo-small').show();
+        $('#logo-big').hide();
     } else {
-        $("#fixed-top").hide();
-        $("#navbrand").show();
+        navbar.classList.remove('fixed-top');
+        navbar.classList.add('bg-navbar');
+        navbar.classList.remove('animate__fadeInDown');
+        navbar.classList.add('animate__fadeIn');
+        buttonNav.classList.add('text-white');
+        buttonNav.classList.remove('text-dark');
+        btnW.classList.remove('btn-primary');
+        btnW.classList.add('btn-white','bg-[#fff]');
+        btnR.classList.remove('btn-primary');
+        btnR.classList.add('btn-white','bg-[#fff]');
+        modal.classList.add('btn-white','bg-[#fff]','text-warning');
+        modal.classList.remove('btn-danger');
+        modale.classList.add('btn-white','bg-[#fff]','text-warning');
+        modale.classList.remove('btn-danger');
+        $('#logo-small').hide();
+        $('#logo-big').show();
     }
 }
 

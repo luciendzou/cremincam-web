@@ -23,18 +23,26 @@
                     <div class="col-12 mt-4">
                         <p class="texte">{{ $item->texte1 }}</p>
                     </div>
+                    @if ($item->image_path_3 != '')
                     <div class="col-12 mt-2">
                         <div class="img-news-datails" style="background-image: url('{{ asset($item->image_path_2) }}')"></div>
                     </div>
+                    @endif
+                    @if ($item->texte3 != '')
                     <div class="col-12 mt-4">
                         <p class="texte">{{ $item->texte2 }}</p>
                     </div>
+                    @endif
+                    @if ($item->image_path_3 != '')
                     <div class="col-12 mt-2">
                         <div class="img-news-datails" style="background-image: url('{{ asset($item->image_path_3) }}')"></div>
                     </div>
+                    @endif
+                    @if ($item->texte3 != '')
                     <div class="col-12 mt-4">
                         <p class="texte">{{ $item->texte3 }}</p>
                     </div>
+                    @endif
                     <div class="col-12 mt-5 text-end">
                         <p class="text-end texte">
                             <b>CREMIN-CAM</b><br>

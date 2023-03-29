@@ -6,7 +6,7 @@
             <h6>Nous connaitre pour mieux nous comprendre !</h6>
         </div>
     </section>
-    <section class="about-tell-me mt-5">
+    <section class="about-tell-me">
         <h1><span>CREMIN-CAM</span>, c'est quoi ?</h1>
         <p class="mt-4 shadow-2">Nous sommes un établissement de microfinance (EMF) de 1ére catégorie agrée par arrêté N°
             00000074/ MINFI / du 8 Janvier 2009
@@ -114,7 +114,7 @@
         </div>
     </section>
 
-    <section class="msg" id="mot-dg">
+  {{--   <section class="msg" id="mot-dg">
         <div class="msg-flex shadow-3 mt-5">
             <div class="msg-text"
                 style="background-image:  linear-gradient(to top, rgba(255, 255, 255, 0.705) 10%, rgba(204, 219, 241, 0.699) 30%,rgba(255, 255, 255, 0.774) 100%), url(/img/header/happy-new-year.png)">
@@ -134,7 +134,7 @@
             </div>
             <div class="msg-img" style="background-image: url(/img/header/Directeur-mot.png)"></div>
         </div>
-    </section>
+    </section> --}}
 
 
     <section class="organigram mt-2">
@@ -165,7 +165,7 @@
         </div>
     </section>
 
-    <section class="team mt-5">
+    <section class="team">
         <h1>Nos Dirigeants</h1>
         <div class="teams-officer mt-4">
             <div class="team-card">

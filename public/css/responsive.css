@@ -1,0 +1,550 @@
+@media screen and (min-width: 266px) and (max-width: 300px) {
+
+    .small-register {
+        display: block;
+    }
+
+    .big-register {
+        display: none;
+    }
+
+    .bg-header-home {
+        height: 200px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        text-align: start;
+    }
+
+    .bg-header-home .bg-header-item {
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20% 5%;
+    }
+
+    .bg-header-home .title-header h1 {
+        font-size: 18px;
+    }
+
+    .bg-header-home .title-header h4 {
+        font-size: 15px;
+    }
+
+    .bg-header-home .title-header {
+        margin-bottom: 0%;
+    }
+
+    .bg-header-home .btn-header {
+        margin-top: 1%;
+        font-size: 10px;
+    }
+
+    .btn-wa {
+        display: none;
+    }
+
+    .btn-wn {
+        display: block;
+    }
+
+    .others-actions {
+        bottom: 35px;
+    }
+
+    .actions a {
+        display: block;
+    }
+
+    .actions i {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .actions a {
+        font-size: 8px;
+    }
+
+    .brand-one h1 {
+        font-size: 20px;
+    }
+
+    .brand-one .col {
+        margin-bottom: 2%;
+    }
+
+    .brand-one .contain {
+        padding: 0%;
+    }
+
+    .card-one {
+        width: 100%;
+        display: block;
+    }
+
+    .card-one .bg-one {
+        width: 100%;
+        height: 130px;
+        border-end-start-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+
+    .text-one {
+        width: 100%;
+        background-color: white;
+        border-top-right-radius: 0;
+        border-end-end-radius: 20px;
+        border-end-start-radius: 20px;
+    }
+
+    .text-one h1 {
+        font-size: 15px;
+    }
+
+    .text-one b {
+        font-size: 18px;
+    }
+
+    .text-one i {
+        font-size: 10px;
+    }
+
+    .text-one .details {
+        font-size: 8px;
+    }
+
+    .text-one a {
+        font-size: 12px;
+        margin-bottom: 5%;
+    }
+
+    .brand-three {
+        margin-top: 6%;
+    }
+
+
+    .brand-three-flex {
+        display: block;
+        height: 360px;
+    }
+
+    .brand-three-flex .bg-three {
+        display: none;
+
+    }
+
+
+    .text-three {
+        padding: 3% 5%;
+        width: 100%;
+        background-color: white;
+    }
+
+    .text-three h1 {
+        font-size: 18px;
+    }
+
+    .text-three b {
+        font-size: 18px;
+    }
+
+    .text-three i {
+        font-size: 14px;
+    }
+
+    .text-three .details {
+        font-size: 14px;
+        margin-top: 5%;
+    }
+
+    .text-three .row {
+        display: block;
+        margin-bottom: 5%;
+    }
+
+    .text-three .col {
+        width: 100%;
+    }
+
+
+
+    .brand-four h1 {
+        font-size: 22px;
+    }
+
+    .brand-four-flex .col-3 {
+        width: 100%;
+    }
+
+    .brand-four-flex .carte {
+        height: 220px;
+        margin-bottom: 2%;
+    }
+
+    .carte-img {
+        height: 45%;
+    }
+
+    .carte-title {
+        height: 40%;
+        padding-bottom: 2%;
+    }
+
+    .carte-title p {
+        font-size: 10px;
+    }
+
+    .carte-options .date-four {
+        font-size: 12px;
+    }
+
+    .carte-options .text-end a {
+        font-size: 12px;
+    }
+
+    .carte-options {
+        height: 15%;
+    }
+
+
+
+    .brand-covid {
+        display: block;
+        padding: 8% 4%;
+        border-bottom: 1px solid rgba(139, 139, 139, 0.158);
+    }
+
+    .brand-covid .bg-img-covid {
+        display: none;
+    }
+
+    .brand-covid .text-covid {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-covid h1 {
+        font-size: 20px;
+    }
+
+    .text-covid p {
+        margin-top: 5%;
+        font-size: 14px;
+    }
+
+    .brand-covid .button-covid {
+        width: 100%;
+        text-align: center;
+    }
+
+    .button-covid .btn {
+        margin-top: 2%;
+    }
+
+
+
+    .brand-account .account-title {
+        font-size: 20px;
+    }
+
+    .brand-account .row {
+        display: block;
+    }
+
+    .brand-account .col {
+        margin-bottom: 3%;
+    }
+
+    .brand-account .text-account b {
+        font-size: 16px;
+    }
+
+    .brand-account .text-account p {
+        font-size: 14px;
+    }
+
+    .brand-six {
+        margin-top: 5%;
+    }
+
+    .brand-six h1 {
+        font-size: 20px;
+    }
+
+    .newsletters {
+        padding: 4% 8%;
+    }
+
+    .news-form input {
+        width: 100%;
+        margin-bottom: 4%;
+        border-radius: 5px;
+    }
+
+    .news-form button {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+
+    footer .bg-footer i {
+        font-size: 12px;
+    }
+
+    .linker .row {
+        display: block;
+    }
+
+    .linker .row .col,
+    .col-2 {
+        width: 100%;
+        border-right: none;
+    }
+
+    .footer-end {
+        font-size: 12px;
+    }
+
+
+    /* section ABOUT */
+    .head-img {
+        padding: 20% 5%;
+        height: 180px;
+    }
+
+    .head-img .title-header h2 {
+        font-size: 20px;
+    }
+
+    .head-img .title-header h6 {
+        font-size: 18px;
+    }
+
+    .about-tell-me {
+        margin-top: 10%;
+    }
+
+    .about-tell-me h1 {
+        font-size: 22px;
+    }
+
+    .about-tell-me p {
+        font-size: 18px;
+        padding: 5%;
+        text-align: justify;
+    }
+
+    .quality h1 {
+        font-size: 22px;
+    }
+
+    .quality .col {
+        margin-bottom: 5%;
+    }
+
+    .quality .services-about {
+        width: 100%;
+    }
+
+    .organigram h1 {
+        font-size: 22px;
+        margin-top: 5%;
+    }
+
+    .organigram .orni-flex {
+        display: block;
+    }
+
+    .organigram .orni-img {
+        display: none;
+    }
+
+
+    .orni-text {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .orni-text h3 {
+        font-size: 18px;
+    }
+
+
+    .orni-text p {
+        font-size: 11px;
+    }
+
+    .orni-text button {
+        font-size: 10px;
+    }
+
+
+
+
+    .team h1 {
+        font-size: 22px;
+        margin-top: 5%;
+    }
+
+    .teams-officer {
+        display: block;
+    }
+
+    .team-card {
+        width: 90%;
+        margin: 0% 4%;
+        margin-bottom: 5%;
+    }
+
+    .team-img {
+        height: 150px;
+    }
+
+    .orgis {
+        display: block;
+        height: 500px;
+    }
+
+    .orgis .orgis-img {
+        height: 220px;
+    }
+
+    .orgis-text {
+        width: 100%;
+    }
+
+    .orgis-text ul li {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .orgis-text ul {
+        line-height: 60%;
+    }
+
+
+    /* Responsive for Story */
+
+    .section-creation {
+        margin-top: 5%;
+    }
+
+    .section-creation h1 {
+        font-size: 22px;
+    }
+
+    .section-creation p {
+        font-size: 12px;
+    }
+
+    .section-creation .stepper {
+        margin-top: 8%;
+    }
+
+    .section-creation .stepper h5 {
+        font-size: 14px;
+    }
+
+    .section-creation .stepper .lead {
+        font-size: 12px;
+    }
+
+
+    .story-pub {
+        display: block;
+        height: 280px;
+    }
+
+    .story-pub .story-img-1,
+    .story-img-2,
+    .story-img-3 {
+        display: none;
+    }
+
+    .story-pub .story-text {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 8%;
+    }
+
+    .story-pub .story-text h1 {
+        font-size: 18px;
+    }
+
+    .story-pub .story-text p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+
+    /* Responsive agencies */
+    .agences {
+        margin-top: 4%;
+    }
+
+    .agences .he-agence {
+        font-size: 22px;
+    }
+
+    .agences .nav-link .agences-lieu {
+        font-size: 10px;
+        transform: rotate(-90deg);
+        padding: 0%;
+    }
+
+    .agences .nav-link i {
+        display: none;
+    }
+
+    .nav-link .agence-position {
+        display: none;
+    }
+
+    .agences ul {
+        background-color: blue;
+    }
+
+    .yde-img {
+        background-size: contain;
+    }
+
+    .tab-pane h1 {
+        font-size: 22px;
+    }
+
+    .tab-pane .card-body {
+        padding: 4% 2%;
+    }
+
+    .tab-pane p {
+        font-size: 10px;
+    }
+
+
+    /* Responsive carrieres */
+    .carrieres h1 {
+        margin-top: 8%;
+        font-size: 22px;
+    }
+
+    .carrieres h3 {
+        font-size: 12px;
+    }
+
+    .carrieres .row {
+        margin-top: 8%;
+        display: block;
+    }
+
+    .carrieres .col {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+
+
+}

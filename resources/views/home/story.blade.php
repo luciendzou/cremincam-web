@@ -17,7 +17,7 @@
 
     <div class="section-creation">
         <h1>Sa création</h1>
-        <div class="stepper d-flex flex-column mt-5 ml-2">
+        <div class="stepper d-flex flex-column ml-2">
             <div class="d-flex mb-1">
                 <div class="d-flex flex-column pr-4 align-items-center me-4">
                     <div class="rounded-circle py-2 px-3 bg-warning text-white mb-1">1</div>
@@ -117,15 +117,15 @@
             <p class="mt-3">Si notre histoire vous intérèsse, et vous voulez commencer une grande et très longue aventure
                 avec une équipe de professionnels, près à vous fournir un service de qualité,
                 alors...</p>
-            <a href="/agences" class="btn btn-primary mt-3">Comment vous retrouver</a>
+            <a href="/agences" class="btn btn-primary mt-3">Comment nous retrouver</a>
         </div>
-        <div class="story-img-1" style="background-image: url(img/header/dg.jpg)"></div>
-        <div class="story-img-2" style="background-image: url(img/header/dga.jpg)"></div>
-        <div class="story-img-3" style="background-image: url(img/header/img-7.jpg)"></div>
+        <div class="story-img-1" style="background-image: url(img/header/img-166.jpg)"></div>
+        <div class="story-img-2" style="background-image: url(img/header/img-17.jpg)"></div>
+        <div class="story-img-3" style="background-image: url(img/header/img-18.jpg)"></div>
     </section>
 
 
-    <section class="brand-covid bg-white mt-5 shadow-2">
+    <section class="brand-covid bg-white shadow-2">
         <div class="bg-img-covid" style="background-image: url(img/header/covid-19.jpg);"></div>
         <div class="text-covid">
             <h1>Lutte contre le COVID-19</h1>

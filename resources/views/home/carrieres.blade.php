@@ -10,11 +10,11 @@
     <section class="carrieres bg-white">
         <h1>CREMIN-CAM</h1>
         <h3>Si vous êtes un pointieux du travail et vous avez les compétences pour cela...</h3>
-        <div class="row mt-5">
-            <div class="col-3 me-auto">
+        <div class="row">
+            <div class="col-3 me-auto text-center">
                 <a href="">
                     <div class="card text-start">
-                        <div class="card-img" style="background-image: url({{ asset('img/header/img-3.jpg') }})"></div>
+                        <div class="card-img" style="background-image: url({{ asset('img/header/img-19.jpg') }})"></div>
                         <div class="card-body">
                             <h3>Demande de stage</h3>
                             <p class="card-text-car mt-2">Sousmettez votre demande de stage en envoyant les documents
@@ -27,7 +27,7 @@
             <div class="col-3 me-auto">
                 <a href="">
                     <div class="card text-start">
-                        <div class="card-img" style="background-image: url({{ asset('img/header/img-2.jpg') }})"></div>
+                        <div class="card-img" style="background-image: url({{ asset('img/header/img-20.jpg') }})"></div>
                         <div class="card-body">
                             <h3>Candidatures spontanées</h3>
                             <p class="card-text-car mt-2">Sousmettez votre candidature en envoyant votre CV et une lettre de
@@ -39,7 +39,7 @@
             <div class="col-3 me-auto">
                 <a href="">
                     <div class="card text-start">
-                        <div class="card-img" style="background-image: url({{ asset('img/header/img-8.jpg') }})"></div>
+                        <div class="card-img" style="background-image: url({{ asset('img/header/img-21.jpg') }})"></div>
                         <div class="card-body">
                             <h3>Postes vacants</h3>
                             <p class="card-text-car mt-2">Consultez cette rubrique, il pourrait avoir un poste fait

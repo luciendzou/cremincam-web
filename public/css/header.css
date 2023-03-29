@@ -16,210 +16,63 @@ body{
      }
 }
 
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-}
-
 header {
     width: 100vw;
     position: absolute;
     z-index: 10;
 }
 
-.navbrand {
-    width: 100%;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
+.navbar{
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
     box-shadow: 0 4px 6px -6px #222;
-    background-color: rgba(0, 7, 15, 0.336);
     /*filter: blur(4px);*/
-	animation: fadeIn 1s ease-in both;
 }
 
-
-.navbrand .logobrand {
-    width: 19%;
-    padding: 2% 2%;
-    border-right: 0.005px solid rgba(255, 255, 255, 0.199);
+.fixed-top {
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    background-color: white;
+    /*filter: blur(4px);*/
 }
 
-.navbrand .menusbrand {
-    width: 81%;
-    display: block;
-    align-items: stretch;
-    justify-content: center;
-}
-
-.first-menus {
-    width: 100%;
-    padding: 1% 2%;
-    border-bottom: 0.005px solid rgba(255, 255, 255, 0.199);
-    display: flex;
-    align-items: stretch;
-
-}
-
-.first-menus .menu-fs-one {
-    width: 20%;
-}
-
-.menu-fs-one h6 {
-    color: white;
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-fs-one a {
-    color: white;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-}
-
-
-.first-menus .menu-fs-two {
-    width: 80%;
-    justify-content: end;
-    align-items: stretch;
-    align-content: space-between;
-    text-align: end;
-}
-
-.second-menus {
-    width: 100%;
-    padding: 2% 2%;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-
-}
-
-.second-menus .menu-sd-one {
-    width: 98%;
-}
-
-.second-menus .menu-sd-two {
-    width: 2%;
-    text-align: end;
-}
-
-.menu-sd-two i{
-    color: white;
-}
-
-.modal-title {
-    font-size: 12px;
-    font-weight: normal;
-}
-
-.choix-modal-1 {
-    border: 0.05px solid black;
-}
-
-.choix-modal-2 {
-    border-top: 0.05px solid black;
-    border-bottom: 0.05px solid black;
-}
-
-.choix-modal-3 {
-    border: 0.05px solid black;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-li {
-    float: left;
-    /*pour IE*/
-}
-
-ul li a {
-    display: block;
-    float: left;
-    color: rgb(255, 255, 255);
+.fixed-top .nav-link{
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
 }
 
-ul li a:hover {
-    background-color: #d3d3d31a;
+.bg-navbar{
+    background-color: rgba(0, 7, 15, 0.336);
 }
 
+.small-register{
+    display: none;
+}
 
-.navbrand ul li a:hover{
+.bg-navbar .nav-link{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.bg-navbar ul li a:hover {
     background-color: transparent;
     color: orange;
     font-size: 14.1px;
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease 0.5s;
 }
 
-.active-fixed{
-    color: orange;
-    border-bottom: 2px solid orange;
-}
-
-.input-groups{
-    display: flex;
-    width: 100%;
-    height: 50px;
+.fixed-top ul li a:hover {
     background-color: transparent;
-    border: 1px solid white;
-    border-radius: 30px;
-    padding: 5px 5px;
-}
-
-.input-groups input{
-    border-radius: 30px;
-    border: none;
-    width: 100%;
-    padding: 1% 2%;
-}
-
-.input-groups input::after{
-    border: none;
-}
-
-
-.input-groups input::before{
-    border: none;
-}
-
-.input-groups button{
-    position: absolute;
-    right: 66px;
-    top: 94px;
-    width: 15%;
-    border: none;
-    border-radius: 30px;
-    background-color: rgb(16, 123, 245);
-    color: white;
-}
-
-.input-groups button:hover{
-    background-color: rgb(16, 123, 245);
-    color: white;
-}
-
-#show{
-    position: absolute;
-    top: 98px;
+    color: orange;
+    font-size: 14.1px;
+    animation: fadeInAnimation ease 0.5s;
 }
 
 .bg-header{
@@ -235,6 +88,12 @@ ul li a:hover {
 
 .bg-header .title-header{
     width: 55%;
+}
+
+
+.bg-header-home .title-header{
+    width: 95%;
+    margin-bottom: 5%;
 }
 
 .title-header h1{
@@ -301,6 +160,8 @@ ul li a:hover {
     color: #0175d4;
 }
 
+
+/* first header of the website */
 .bg-header-home{
     position: relative;
     top: 0px;
@@ -314,6 +175,7 @@ ul li a:hover {
     height: 525px;
     background-size: cover;
     background-position: right;
+    background-repeat: no-repeat;
     padding: 12% 5%;
 }
 

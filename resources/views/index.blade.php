@@ -24,17 +24,17 @@
     <meta property="og:title" content="La meilleure MICROFINANCE qui soit au Cameroun">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.cremincam.org/">
-    <meta property="og:image" content="https://www.cremincam.org/img/logo/cremincam.png">
+    <meta property="og:image" content="{{ asset('img/logo/cremincam.png') }}">
     <meta property="og:description"
         content="Vous recherchez une microfinance pour vous aider dans vos affaires ? ne cherchez plus. CREMINCAM a tout prévu pour vous accompagner à réaliser vos projets.">
     <meta property="og:site_name" content="CREMINCAM | Microfinance Banque Cameroun Crédit mutuelle">
     <title>CREMIN-CAM | Microfinance Cameroun - Crédit mutuelle d'Investissement du Cameroun</title>
 
     <!-- icon -->
-    <link rel="icon" href="https://www.cremincam.org/img/icon/favicon-256x256.png">
-    <link rel="apple-touch-icon" href="https://www.cremincam.org/img/icon/favicon-256x256.png">
-    <link rel="apple-touch-icon-precomposed" href="https://www.cremincam.org/img/icon/favicon-256x256.png">
-    <link rel="shortcut icon" href="https://www.cremincam.org/img/icon/favicon-256x256.png">
+    <link rel="icon" href="{{ asset('img/icon/favicon-256x256.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('img/icon/favicon-256x256.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('img/icon/favicon-256x256.png') }}">
+    <link rel="shortcut icon" href="{{ asset('img/icon/favicon-256x256.png') }}">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -55,8 +55,8 @@
     <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}">
     <link rel="stylesheet" href="{{ asset('css/newsletters.css') }}">
     <link rel="stylesheet" href="{{ asset('css/news.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('css/fixed-navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/brand-account.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agences.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -67,72 +67,66 @@
 <body>
     <!--Header de la page-->
     <header>
-        <div class="navbrand" id="navbrand">
-            <div class="logobrand">
-                <a href="/"><img src="{{ asset('img/logo/cremincam.png') }}" alt="" srcset=""></a>
-            </div>
-            <div class="menusbrand">
-                <div class="first-menus">
-                    <div class="menu-fs-one">
-                        <h6>Choisir une option</h6>
-                        <a href="" data-mdb-toggle="modal"
-                            data-mdb-target="#staticBackdrop">{{ $title }}<i
-                                class="ms-2 fas fa-caret-down"></i></a>
-                    </div>
-                    <div class="menu-fs-two">
-                        <a href="/" class="btn btn-white btn-floating bg-[#fff] me-2"
-                            title="A propos de CREMINCAM">
-                            <i class="fas fa-landmark"></i>
-                        </a>
-                        <a href="/register" class="btn btn-primary btn-rounded bg-[#1d4ed8] me-2"
-                            title="Créer un compte"><i class="fas fa-user-plus me-3"></i>J'ouvre un compte</a>
-                        <a href="#" class="btn btn-white btn-floating bg-[#fff]" title="Me connecter à compte">
-                            <i class="fas fa-unlock-alt"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="second-menus">
-                    <div class="menu-sd-one">
-                        <ul id="sd-menus">
-                            @foreach ($menus as $item)
-                                <li class="me-4">
-                                    <a  href="/{{ Str::lower(str_replace(' ', '-', $item)) }}">{{ $item }}</a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-navbar animate__animated animate__fadeIn animate__slow" id="navbrand">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white" id="navbar-toggler"></i>
+                </button>
 
-        <div class="fixed-top" id="fixed-top">
-            <div class="logobrand">
-                <a href="/"><img src="{{asset('img/icon/cremi.png')}}" alt="" srcset=""></a>
-            </div>
-            <div class="menusbrand">
-                <div class="menu-sd-one">
-                    <ul id="sd-menus">
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0 pe-0" href="/">
+                        <img id="logo-small" src="{{ asset('img/icon/cremi.png') }}" alt=""
+                            title="microfinance, banque du cameroun" alt="CREMIN-CAM" loading="lazy" width="50">
+                        <img id="logo-big" src="{{ asset('img/logo/cremincam.png') }}"
+                            title="microfinance, banque du cameroun" alt="CREMIN-CAM" loading="lazy" width="150">
+                    </a>
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         @foreach ($menus as $item)
-                            <li class="me-4">
-                                <a href="/{{ Str::lower(str_replace(' ', '-', $item)) }}">{{ $item }}</a>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="/{{ Str::lower(str_replace(' ', '-', $item)) }}">{{ $item }}</a>
                             </li>
                         @endforeach
                     </ul>
+                    <!-- Left links -->
                 </div>
-                <div class="menu-sd-two">
-                    <a href="/" class="btn btn-primary btn-floating bg-[#1d4ed8] me-2"
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    <a href="/" class="btn btn-white btn-floating bg-[#fff] me-2" id="btn-w"
                         title="A propos de CREMINCAM">
                         <i class="fas fa-landmark"></i>
                     </a>
-                    <a href="/register" class="btn btn-primary btn-floating bg-[#1d4ed8] me-2"
+                    <a href="/" class="btn btn-white btn-wa btn-rounded bg-[#fff] me-2 text-warning" id="modal" data-mdb-toggle="modal"
+                        data-mdb-target="#staticBackdrop" title="A propos de CREMINCAM">
+                        {{ $title }} <i class="fas fa-angle-down ms-2"></i>
+                    </a>
+                    <a href="/" class="btn btn-white btn-wn btn-floating bg-[#fff] me-2 text-warning" id="modale" data-mdb-toggle="modal"
+                        data-mdb-target="#staticBackdrop" title="A propos de CREMINCAM">
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <a href="/register" class="btn btn-primary btn-floating bg-[#1d4ed8] me-2 small-register"
                         title="Créer un compte"><i class="fas fa-user-plus me-3"></i></a>
-                    <a href="#" class="btn btn-primary btn-floating bg-[#1d4ed8]"
-                        title="Me connecter à compte">
+                    <a href="/register" class="btn btn-primary btn-rounded bg-[#1d4ed8] me-2 big-register"
+                        title="Créer un compte"><i class="fas fa-user-plus me-3"></i>J'ouvre un compte</a>
+                    <a href="#" class="btn btn-white btn-floating bg-[#fff]" id="btn-red" title="Me connecter à compte">
                         <i class="fas fa-unlock-alt"></i>
                     </a>
                 </div>
+                <!-- Right elements -->
             </div>
-        </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
     </header>
     <!--Fin Header de la page-->
     <div class="containe">
@@ -238,6 +232,7 @@
                 <div class="modal-body text-dark">
                     <div class="container-fluid">
                         <div class="row text-center">
+                            <h1>OÙ SOUHAITEZ VOUS ALLER ?</h1>
                             <div class="col p-5">
                                 <a class="choix-modal" href="/">
                                     <img src="{{ asset('img/header/home.png') }}" alt="">
@@ -297,12 +292,12 @@
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-footer text-muted">
         <!-- Section: Social media -->
-        <section class="d-flex justify-content-center  px-4 py-4">
+        <section class="d-flex justify-content-center px-4 py-4">
             <!-- Left
             <div class="me-5 d-none d-lg-block"><span>Rejoignez-nous sur les réseaux sociaux :</span></div>
              Left -->
             <!-- Right -->
-            <div>
+            <div class="mt-3">
                 <a href="" class="me-4 link-dark"><i class="fab fa-facebook-f"></i></a>
                 <a href="" class="me-4 link-dark"><i class="fab fa-twitter"></i></a>
                 <a href="" class="me-4 link-dark"><i class="fab fa-instagram"></i></a>
@@ -342,7 +337,7 @@
         <!-- Section: Links  -->
 
         <!-- Copyright -->
-        <div class="text-center px-2 py-4" style="background-color: rgba(255, 255, 255); color:rgb(116, 116, 116)">
+        <div class="text-center px-2 py-4 footer-end" style="background-color: rgba(255, 255, 255); color:rgb(116, 116, 116)">
             Copyright © <span id="year" style="color: rgb(116, 116, 116)"></span> Crédit Mutuel d'Investissement
             du
             Cameroun (CREMIN-CAM).
