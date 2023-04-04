@@ -1,4 +1,4 @@
-@media screen and (min-width: 266px) and (max-width: 300px) {
+@media screen and (min-width: 551px) and (max-width: 650px) {
 
     .small-register {
         display: block;
@@ -344,6 +344,14 @@
         margin-bottom: 5%;
     }
 
+    .quality .align-says{
+        display: block;
+    }
+
+    .quality .says{
+        width: 100%;
+    }
+
     .quality .services-about {
         width: 100%;
     }
@@ -547,4 +555,11 @@
 
 
 
+}
+
+@media screen and (min-width: 651px) {
+    
+    .btn-wn {
+        display: none;
+    }
 }

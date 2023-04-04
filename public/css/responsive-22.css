@@ -1,4 +1,4 @@
-@media screen and (min-width: 266px) and (max-width: 300px) {
+@media screen and (min-width: 353px) and (max-width: 400px) {
 
     .small-register {
         display: block;
@@ -336,12 +336,24 @@
         text-align: justify;
     }
 
+    .quality{
+        display: block;
+    }
+
     .quality h1 {
         font-size: 22px;
     }
 
     .quality .col {
         margin-bottom: 5%;
+    }
+
+    .quality .align-says{
+        display: block;
+    }
+
+    .quality .says{
+        width: 100%;
     }
 
     .quality .services-about {

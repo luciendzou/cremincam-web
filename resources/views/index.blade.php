@@ -56,6 +56,10 @@
     <link rel="stylesheet" href="{{ asset('css/newsletters.css') }}">
     <link rel="stylesheet" href="{{ asset('css/news.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive-2.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive-22.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive-3.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive-4.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/brand-account.css') }}">
     <link rel="stylesheet" href="{{ asset('css/agences.css') }}">
@@ -153,7 +157,7 @@
                                 style="background: url({{ asset('img/partner/mutresor.png') }});background-repeat: no-repeat;background-size: contain;">
                             </div>
                             <div class="icons-bg"
-                                style="background: url({{ asset('img/partner/téléchargement.jfif') }});background-repeat: no-repeat;background-size: contain;">
+                                style="background: url({{ asset('img/partner/reccucam.png') }});background-repeat: no-repeat;background-size: contain;">
                             </div>
                             <div class="icons-bg"
                                 style="background: url({{ asset('img/partner/ecobank.png') }});background-repeat: no-repeat;background-size: contain;">

@@ -14,8 +14,8 @@
     </section>
     <section class="quality mt-3">
         <h1>Notre vision, notre mission, notre objectif et nos valeurs </h1>
-        <div class="row mt-4">
-            <div class="col">
+        <div class="row mt-4 align-says">
+            <div class="col says">
                 <div class="card text-start">
                     <div class="card-body">
                         <h5 class="card-title">Vision</h5>
